@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LAIEN | Creative KV Portfolio</title>
+    <meta
+      name="description"
+      content="A floating interactive portfolio of brand KV and product visual work."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="cursor" aria-hidden="true"><span></span></div>
+
+    <header class="topbar" aria-label="Site navigation">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <span>LAIEN</span>
+        <span>Visual Designer</span>
+      </a>
+      <nav class="nav-links" aria-label="Portfolio links">
+        <a href="#works">Works</a>
+        <a href="#archive">Index</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="scroll-space" id="works" aria-label="Floating works">
+        <div class="stage">
+          <div class="stage-copy">
+            <p>LAIEN</p>
+            <h1>Creative KV<br />Portfolio</h1>
+            <div class="hero-actions">
+              <a href="#archive">View works</a>
+            </div>
+          </div>
+          <div class="scene" aria-label="Interactive floating work gallery"></div>
+        </div>
+      </section>
+
+      <section class="archive" id="archive" aria-label="Selected works index">
+        <div class="archive-heading">
+          <p>Selected Works</p>
+          <h2>Brand visuals shaped for product stories, seasonal campaigns, and launch moments.</h2>
+        </div>
+        <div class="archive-grid"></div>
+      </section>
+    </main>
+
+    <div class="lightbox" role="dialog" aria-modal="true" aria-label="Work preview" hidden>
+      <button class="lightbox-close" type="button" aria-label="Close preview">
+        <span aria-hidden="true">x</span>
+      </button>
+      <figure>
+        <img src="" alt="" />
+        <figcaption>
+          <span id="lightbox-title"></span>
+          <span id="lightbox-meta"></span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
